@@ -62,6 +62,27 @@
 //     alert("Incorrect assessment");
 // }
 
+// or
+
+// let grade = parseInt(prompt('Insert a grade'));
+
+// switch (true) {
+//     case (grade >= 0 && grade <= 49):
+//         alert("Unsatisfied!");
+//         break;
+//     case (grade >= 50 && grade <= 70):
+//         alert("Satisfied!");
+//         break;
+//     case (grade >= 71 && grade <= 87):
+//         alert("Good!");
+//         break;
+//     case (grade >= 88 && grade <= 100):
+//         alert("Excellent!");
+//         break;
+//     default:
+//         alert("Incorrect assessment");
+// }
+
 
 // Task_5
 
@@ -80,10 +101,10 @@
 
 // Task_6
 
-let num = parseInt(prompt("Insert a number:"));
+// let num = parseInt(prompt("Insert a number:"));
 
-if (math.isPrime(num)) {
-    alert(`${num} is a prime number.`);
-} else {
-    alert(`${num} is not a prime number.`);
-}
+// if (math.isPrime(num)) {
+//     alert(`${num} is a prime number.`);
+// } else {
+//     alert(`${num} is not a prime number.`);
+// }
