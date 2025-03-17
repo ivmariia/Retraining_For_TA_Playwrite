@@ -34,9 +34,6 @@ button.addEventListener("click", function(){
     div.style.display = "none";;
     })
 
-  
-
-
 // Task_3
 
 // let button = document.getElementById("button");
