@@ -15,22 +15,26 @@
 
 
 // Task_2
+let button = document.getElementById("btn");
+button.addEventListener("click", function(){
+    let header = document.querySelector("h2");
+    header.style.color = "red"; 
+    header.style.textDecoration = "underline";
+    
+    let paragraph = document.getElementById("data");
+    paragraph.style.color = "brown";
+    paragraph.style.fontSize = "18px";   
+    paragraph.style.fontFamily = "Comic Sans MS"; 
+    
+    let span = document.querySelector("span");
+    span.style.color = "green";
+    span.style.fontStyle = "italic";
+    
+    let div = document.querySelector("div");
+    div.style.display = "none";;
+    })
 
-// let header = document.querySelector("h2");
-// header.style.color = "red"; 
-// header.style.textDecoration = "underline";
-
-// let paragraph = document.getElementById("data");
-// paragraph.style.color = "brown";
-// paragraph.style.fontSize = "18px";   
-// paragraph.style.fontFamily = "Comic Sans MS"; 
-
-// let span = document.querySelector("span");
-// span.style.color = "green";
-// span.style.fontStyle = "italic";
-
-// let div = document.querySelector("div");
-// div.style.display = "none";  
+  
 
 
 // Task_3
@@ -68,34 +72,34 @@
 //     article.appendChild(container);
 
 //     document.body.appendChild(article);
-// });
+// });333
 
 // Task_5
 
-    function sendMessage() {
-        let inputField = document.getElementById("messageInput");
-        let messageText = inputField.value.trim();
+    // function sendMessage() {
+    //     let inputField = document.getElementById("messageInput");
+    //     let messageText = inputField.value.trim();
 
-        if (messageText === "") return;
+    //     if (messageText === "") return;
 
-        let messagesContainer = document.getElementById("messages");
+    //     let messagesContainer = document.getElementById("messages");
 
-        let messageDiv = document.createElement("div");
-        messageDiv.classList.add("message-container");
+    //     let messageDiv = document.createElement("div");
+    //     messageDiv.classList.add("message-container");
 
-        let textPara = document.createElement("p");
-        textPara.classList.add("message-text");
-        textPara.textContent = messageText;
+    //     let textPara = document.createElement("p");
+    //     textPara.classList.add("message-text");
+    //     textPara.textContent = messageText;
 
-        let datePara = document.createElement("p");
-        datePara.classList.add("message-date");
-        let now = new Date();
-        datePara.textContent = now.toLocaleDateString() + " " + now.toLocaleTimeString();
+    //     let datePara = document.createElement("p");
+    //     datePara.classList.add("message-date");
+    //     let now = new Date();
+    //     datePara.textContent = now.toLocaleDateString() + " " + now.toLocaleTimeString();
 
-        messageDiv.appendChild(textPara);
-        messageDiv.appendChild(datePara);
+    //     messageDiv.appendChild(textPara);
+    //     messageDiv.appendChild(datePara);
 
-        messagesContainer.prepend(messageDiv);
+    //     messagesContainer.prepend(messageDiv);
 
-        inputField.value = "";
-    }
+    //     inputField.value = "";
+    // }
